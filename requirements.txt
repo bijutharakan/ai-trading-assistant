@@ -1,3 +1,6 @@
 
 python-jose[cryptography]
 passlib[bcrypt]
+
+kiteconnect
+newsapi-python
