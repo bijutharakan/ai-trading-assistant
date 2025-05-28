@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "personal_trading_ai_backend"
+version = "0.1.0"
+description = "Backend for personal AI trading assistant"
+authors = ["Your Name <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+httpx = "*"
+python-dotenv = "*"
+openai = "*"
+sqlalchemy = "*"
+databases = "*"
+redis = "*"
+aiofiles = "*"
