@@ -1,10 +1,10 @@
 from fastapi import FastAPI
-from app.api import routes
+from app.api import routes, auth
 from app.config.logger import setup_logging
 
 app = FastAPI()
 setup_logging()
 
-@app.get('/')
-def root():
-    return {'message': 'Trading AI Recommendation Engine Running'}
+# Include auth and signal routers
+app.include_router(auth.router, tags=["auth"])
+app.include_router(routes.router, prefix="/api", tags=["signals"])
